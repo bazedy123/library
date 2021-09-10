@@ -54,11 +54,29 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="veiws\formes\frm_Authers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veiws\formes\frm_Authers.Designer.cs">
+      <DependentUpon>frm_Authers.cs</DependentUpon>
+    </Compile>
     <Compile Include="veiws\formes\frm_Catogry.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="veiws\formes\frm_Catogry.Designer.cs">
       <DependentUpon>frm_Catogry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veiws\formes\frm_country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veiws\formes\frm_country.Designer.cs">
+      <DependentUpon>frm_country.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veiws\formes\frm_dar_publish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veiws\formes\frm_dar_publish.Designer.cs">
+      <DependentUpon>frm_dar_publish.cs</DependentUpon>
     </Compile>
     <Compile Include="veiws\formes\frm_type.cs">
       <SubType>Form</SubType>
@@ -82,8 +100,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="veiws\formes\frm_Authers.resx">
+      <DependentUpon>frm_Authers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="veiws\formes\frm_Catogry.resx">
       <DependentUpon>frm_Catogry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veiws\formes\frm_country.resx">
+      <DependentUpon>frm_country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veiws\formes\frm_dar_publish.resx">
+      <DependentUpon>frm_dar_publish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="veiws\formes\frm_type.resx">
       <DependentUpon>frm_type.cs</DependentUpon>

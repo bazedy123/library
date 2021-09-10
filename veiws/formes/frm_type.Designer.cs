@@ -29,110 +29,110 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_type));
-            this.dgv_data1 = new System.Windows.Forms.DataGridView();
-            this.btn_delete = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_add = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_removeall = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_new = new DevExpress.XtraEditors.SimpleButton();
+            this.dgv_data1_cat = new System.Windows.Forms.DataGridView();
+            this.btn_delete_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_add_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_removeall_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_new_cat = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_save = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_first = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_next = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_last = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_save_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_first_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_next_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_last_cat = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_prev = new DevExpress.XtraEditors.SimpleButton();
-            this.txt_name = new System.Windows.Forms.TextBox();
+            this.btn_prev_cat = new DevExpress.XtraEditors.SimpleButton();
+            this.txt_desc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_id = new System.Windows.Forms.TextBox();
+            this.txt_id_cat = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_name_cat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_data1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_data1_cat)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgv_data1
+            // dgv_data1_cat
             // 
-            this.dgv_data1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_data1.Location = new System.Drawing.Point(43, 280);
-            this.dgv_data1.Name = "dgv_data1";
-            this.dgv_data1.Size = new System.Drawing.Size(794, 204);
-            this.dgv_data1.TabIndex = 14;
+            this.dgv_data1_cat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_data1_cat.Location = new System.Drawing.Point(43, 280);
+            this.dgv_data1_cat.Name = "dgv_data1_cat";
+            this.dgv_data1_cat.Size = new System.Drawing.Size(794, 204);
+            this.dgv_data1_cat.TabIndex = 14;
             // 
-            // btn_delete
+            // btn_delete_cat
             // 
-            this.btn_delete.Appearance.BackColor = System.Drawing.Color.LightGray;
-            this.btn_delete.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_delete.Appearance.Options.UseBackColor = true;
-            this.btn_delete.Appearance.Options.UseFont = true;
-            this.btn_delete.Appearance.Options.UseTextOptions = true;
-            this.btn_delete.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_delete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.ImageOptions.Image")));
-            this.btn_delete.Location = new System.Drawing.Point(419, 38);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_delete.Size = new System.Drawing.Size(86, 33);
-            this.btn_delete.TabIndex = 14;
-            this.btn_delete.Text = "حذف";
+            this.btn_delete_cat.Appearance.BackColor = System.Drawing.Color.LightGray;
+            this.btn_delete_cat.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete_cat.Appearance.Options.UseBackColor = true;
+            this.btn_delete_cat.Appearance.Options.UseFont = true;
+            this.btn_delete_cat.Appearance.Options.UseTextOptions = true;
+            this.btn_delete_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.btn_delete_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.ImageOptions.Image")));
+            this.btn_delete_cat.Location = new System.Drawing.Point(419, 38);
+            this.btn_delete_cat.Name = "btn_delete_cat";
+            this.btn_delete_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_delete_cat.Size = new System.Drawing.Size(86, 33);
+            this.btn_delete_cat.TabIndex = 14;
+            this.btn_delete_cat.Text = "حذف";
             // 
-            // btn_add
+            // btn_add_cat
             // 
-            this.btn_add.Appearance.BackColor = System.Drawing.Color.LightGray;
-            this.btn_add.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add.Appearance.Options.UseBackColor = true;
-            this.btn_add.Appearance.Options.UseFont = true;
-            this.btn_add.Appearance.Options.UseTextOptions = true;
-            this.btn_add.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_add.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.ImageOptions.Image")));
-            this.btn_add.Location = new System.Drawing.Point(235, 38);
-            this.btn_add.Name = "btn_add";
-            this.btn_add.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_add.Size = new System.Drawing.Size(86, 33);
-            this.btn_add.TabIndex = 10;
-            this.btn_add.Text = "اضافة";
+            this.btn_add_cat.Appearance.BackColor = System.Drawing.Color.LightGray;
+            this.btn_add_cat.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_cat.Appearance.Options.UseBackColor = true;
+            this.btn_add_cat.Appearance.Options.UseFont = true;
+            this.btn_add_cat.Appearance.Options.UseTextOptions = true;
+            this.btn_add_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.btn_add_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.ImageOptions.Image")));
+            this.btn_add_cat.Location = new System.Drawing.Point(235, 38);
+            this.btn_add_cat.Name = "btn_add_cat";
+            this.btn_add_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_add_cat.Size = new System.Drawing.Size(86, 33);
+            this.btn_add_cat.TabIndex = 10;
+            this.btn_add_cat.Text = "اضافة";
             // 
-            // btn_removeall
+            // btn_removeall_cat
             // 
-            this.btn_removeall.Appearance.BackColor = System.Drawing.Color.LightGray;
-            this.btn_removeall.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_removeall.Appearance.Options.UseBackColor = true;
-            this.btn_removeall.Appearance.Options.UseFont = true;
-            this.btn_removeall.Appearance.Options.UseTextOptions = true;
-            this.btn_removeall.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_removeall.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall.ImageOptions.Image")));
-            this.btn_removeall.Location = new System.Drawing.Point(511, 38);
-            this.btn_removeall.Name = "btn_removeall";
-            this.btn_removeall.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_removeall.Size = new System.Drawing.Size(109, 33);
-            this.btn_removeall.TabIndex = 13;
-            this.btn_removeall.Text = "حذف الكل";
+            this.btn_removeall_cat.Appearance.BackColor = System.Drawing.Color.LightGray;
+            this.btn_removeall_cat.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_removeall_cat.Appearance.Options.UseBackColor = true;
+            this.btn_removeall_cat.Appearance.Options.UseFont = true;
+            this.btn_removeall_cat.Appearance.Options.UseTextOptions = true;
+            this.btn_removeall_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.btn_removeall_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall.ImageOptions.Image")));
+            this.btn_removeall_cat.Location = new System.Drawing.Point(511, 38);
+            this.btn_removeall_cat.Name = "btn_removeall_cat";
+            this.btn_removeall_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_removeall_cat.Size = new System.Drawing.Size(109, 33);
+            this.btn_removeall_cat.TabIndex = 13;
+            this.btn_removeall_cat.Text = "حذف الكل";
             // 
-            // btn_new
+            // btn_new_cat
             // 
-            this.btn_new.Appearance.BackColor = System.Drawing.Color.LightGray;
-            this.btn_new.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_new.Appearance.Options.UseBackColor = true;
-            this.btn_new.Appearance.Options.UseFont = true;
-            this.btn_new.Appearance.Options.UseTextOptions = true;
-            this.btn_new.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_new.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new.ImageOptions.Image")));
-            this.btn_new.Location = new System.Drawing.Point(143, 38);
-            this.btn_new.Name = "btn_new";
-            this.btn_new.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_new.Size = new System.Drawing.Size(86, 33);
-            this.btn_new.TabIndex = 11;
-            this.btn_new.Text = "جديد";
+            this.btn_new_cat.Appearance.BackColor = System.Drawing.Color.LightGray;
+            this.btn_new_cat.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_new_cat.Appearance.Options.UseBackColor = true;
+            this.btn_new_cat.Appearance.Options.UseFont = true;
+            this.btn_new_cat.Appearance.Options.UseTextOptions = true;
+            this.btn_new_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.btn_new_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new.ImageOptions.Image")));
+            this.btn_new_cat.Location = new System.Drawing.Point(143, 38);
+            this.btn_new_cat.Name = "btn_new_cat";
+            this.btn_new_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_new_cat.Size = new System.Drawing.Size(86, 33);
+            this.btn_new_cat.TabIndex = 11;
+            this.btn_new_cat.Text = "جديد";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btn_save);
-            this.groupBox2.Controls.Add(this.btn_delete);
-            this.groupBox2.Controls.Add(this.btn_add);
-            this.groupBox2.Controls.Add(this.btn_removeall);
-            this.groupBox2.Controls.Add(this.btn_new);
+            this.groupBox2.Controls.Add(this.btn_save_cat);
+            this.groupBox2.Controls.Add(this.btn_delete_cat);
+            this.groupBox2.Controls.Add(this.btn_add_cat);
+            this.groupBox2.Controls.Add(this.btn_removeall_cat);
+            this.groupBox2.Controls.Add(this.btn_new_cat);
             this.groupBox2.Location = new System.Drawing.Point(43, 177);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(794, 97);
@@ -140,58 +140,58 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "العمليات المتاحة";
             // 
-            // btn_save
+            // btn_save_cat
             // 
-            this.btn_save.Appearance.BackColor = System.Drawing.Color.LightGray;
-            this.btn_save.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_save.Appearance.Options.UseBackColor = true;
-            this.btn_save.Appearance.Options.UseFont = true;
-            this.btn_save.Appearance.Options.UseTextOptions = true;
-            this.btn_save.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_save.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.ImageOptions.Image")));
-            this.btn_save.Location = new System.Drawing.Point(327, 38);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btn_save.Size = new System.Drawing.Size(86, 33);
-            this.btn_save.TabIndex = 15;
-            this.btn_save.Text = "حفظ";
+            this.btn_save_cat.Appearance.BackColor = System.Drawing.Color.LightGray;
+            this.btn_save_cat.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_save_cat.Appearance.Options.UseBackColor = true;
+            this.btn_save_cat.Appearance.Options.UseFont = true;
+            this.btn_save_cat.Appearance.Options.UseTextOptions = true;
+            this.btn_save_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
+            this.btn_save_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.ImageOptions.Image")));
+            this.btn_save_cat.Location = new System.Drawing.Point(327, 38);
+            this.btn_save_cat.Name = "btn_save_cat";
+            this.btn_save_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_save_cat.Size = new System.Drawing.Size(86, 33);
+            this.btn_save_cat.TabIndex = 15;
+            this.btn_save_cat.Text = "حفظ";
             // 
-            // btn_first
+            // btn_first_cat
             // 
-            this.btn_first.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_first.Appearance.Options.UseBackColor = true;
-            this.btn_first.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first.ImageOptions.Image")));
-            this.btn_first.Location = new System.Drawing.Point(10, 40);
-            this.btn_first.Name = "btn_first";
-            this.btn_first.Size = new System.Drawing.Size(40, 23);
-            this.btn_first.TabIndex = 8;
+            this.btn_first_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_first_cat.Appearance.Options.UseBackColor = true;
+            this.btn_first_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first.ImageOptions.Image")));
+            this.btn_first_cat.Location = new System.Drawing.Point(10, 40);
+            this.btn_first_cat.Name = "btn_first_cat";
+            this.btn_first_cat.Size = new System.Drawing.Size(40, 23);
+            this.btn_first_cat.TabIndex = 8;
             // 
-            // btn_next
+            // btn_next_cat
             // 
-            this.btn_next.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_next.Appearance.Options.UseBackColor = true;
-            this.btn_next.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next.ImageOptions.Image")));
-            this.btn_next.Location = new System.Drawing.Point(102, 40);
-            this.btn_next.Name = "btn_next";
-            this.btn_next.Size = new System.Drawing.Size(40, 23);
-            this.btn_next.TabIndex = 7;
+            this.btn_next_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_next_cat.Appearance.Options.UseBackColor = true;
+            this.btn_next_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next.ImageOptions.Image")));
+            this.btn_next_cat.Location = new System.Drawing.Point(102, 40);
+            this.btn_next_cat.Name = "btn_next_cat";
+            this.btn_next_cat.Size = new System.Drawing.Size(40, 23);
+            this.btn_next_cat.TabIndex = 7;
             // 
-            // btn_last
+            // btn_last_cat
             // 
-            this.btn_last.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_last.Appearance.Options.UseBackColor = true;
-            this.btn_last.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last.ImageOptions.Image")));
-            this.btn_last.Location = new System.Drawing.Point(148, 40);
-            this.btn_last.Name = "btn_last";
-            this.btn_last.Size = new System.Drawing.Size(40, 23);
-            this.btn_last.TabIndex = 5;
+            this.btn_last_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_last_cat.Appearance.Options.UseBackColor = true;
+            this.btn_last_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last.ImageOptions.Image")));
+            this.btn_last_cat.Location = new System.Drawing.Point(148, 40);
+            this.btn_last_cat.Name = "btn_last_cat";
+            this.btn_last_cat.Size = new System.Drawing.Size(40, 23);
+            this.btn_last_cat.TabIndex = 5;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btn_first);
-            this.groupBox3.Controls.Add(this.btn_next);
-            this.groupBox3.Controls.Add(this.btn_last);
-            this.groupBox3.Controls.Add(this.btn_prev);
+            this.groupBox3.Controls.Add(this.btn_first_cat);
+            this.groupBox3.Controls.Add(this.btn_next_cat);
+            this.groupBox3.Controls.Add(this.btn_last_cat);
+            this.groupBox3.Controls.Add(this.btn_prev_cat);
             this.groupBox3.Location = new System.Drawing.Point(367, 101);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(199, 83);
@@ -199,24 +199,24 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "اسهم التنقل";
             // 
-            // btn_prev
+            // btn_prev_cat
             // 
-            this.btn_prev.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_prev.Appearance.Options.UseBackColor = true;
-            this.btn_prev.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev.ImageOptions.Image")));
-            this.btn_prev.Location = new System.Drawing.Point(56, 40);
-            this.btn_prev.Name = "btn_prev";
-            this.btn_prev.Size = new System.Drawing.Size(40, 23);
-            this.btn_prev.TabIndex = 6;
+            this.btn_prev_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_prev_cat.Appearance.Options.UseBackColor = true;
+            this.btn_prev_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev.ImageOptions.Image")));
+            this.btn_prev_cat.Location = new System.Drawing.Point(56, 40);
+            this.btn_prev_cat.Name = "btn_prev_cat";
+            this.btn_prev_cat.Size = new System.Drawing.Size(40, 23);
+            this.btn_prev_cat.TabIndex = 6;
             // 
-            // txt_name
+            // txt_desc
             // 
-            this.txt_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_name.Location = new System.Drawing.Point(6, 33);
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(161, 30);
-            this.txt_name.TabIndex = 3;
-            this.txt_name.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_desc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_desc.Location = new System.Drawing.Point(6, 33);
+            this.txt_desc.Name = "txt_desc";
+            this.txt_desc.Size = new System.Drawing.Size(161, 30);
+            this.txt_desc.TabIndex = 3;
+            this.txt_desc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -230,11 +230,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_name_cat);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_name);
+            this.groupBox1.Controls.Add(this.txt_desc);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txt_id);
+            this.groupBox1.Controls.Add(this.txt_id_cat);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(34, 12);
             this.groupBox1.Name = "groupBox1";
@@ -243,15 +243,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات التصنيف";
             // 
-            // txt_id
+            // txt_id_cat
             // 
-            this.txt_id.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_id.Location = new System.Drawing.Point(581, 36);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(117, 30);
-            this.txt_id.TabIndex = 1;
-            this.txt_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
+            this.txt_id_cat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_id_cat.Location = new System.Drawing.Point(581, 36);
+            this.txt_id_cat.Name = "txt_id_cat";
+            this.txt_id_cat.Size = new System.Drawing.Size(117, 30);
+            this.txt_id_cat.TabIndex = 1;
+            this.txt_id_cat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_id_cat.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
             // 
             // label1
             // 
@@ -263,14 +263,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "رقم التصنيف :";
             // 
-            // textBox1
+            // txt_name_cat
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(282, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 30);
-            this.textBox1.TabIndex = 5;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txt_name_cat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_name_cat.Location = new System.Drawing.Point(282, 35);
+            this.txt_name_cat.Name = "txt_name_cat";
+            this.txt_name_cat.Size = new System.Drawing.Size(161, 30);
+            this.txt_name_cat.TabIndex = 5;
+            this.txt_name_cat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -288,7 +288,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 496);
-            this.Controls.Add(this.dgv_data1);
+            this.Controls.Add(this.dgv_data1_cat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
@@ -300,7 +300,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "التصنيفات";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_data1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_data1_cat)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -311,24 +311,24 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgv_data1;
-        private DevExpress.XtraEditors.SimpleButton btn_delete;
-        private DevExpress.XtraEditors.SimpleButton btn_add;
-        private DevExpress.XtraEditors.SimpleButton btn_removeall;
-        private DevExpress.XtraEditors.SimpleButton btn_new;
+        private System.Windows.Forms.DataGridView dgv_data1_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_delete_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_add_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_removeall_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_new_cat;
         private System.Windows.Forms.GroupBox groupBox2;
-        private DevExpress.XtraEditors.SimpleButton btn_save;
-        private DevExpress.XtraEditors.SimpleButton btn_first;
-        private DevExpress.XtraEditors.SimpleButton btn_next;
-        private DevExpress.XtraEditors.SimpleButton btn_last;
+        private DevExpress.XtraEditors.SimpleButton btn_save_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_first_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_next_cat;
+        private DevExpress.XtraEditors.SimpleButton btn_last_cat;
         private System.Windows.Forms.GroupBox groupBox3;
-        private DevExpress.XtraEditors.SimpleButton btn_prev;
-        private System.Windows.Forms.TextBox txt_name;
+        private DevExpress.XtraEditors.SimpleButton btn_prev_cat;
+        private System.Windows.Forms.TextBox txt_desc;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_id;
+        private System.Windows.Forms.TextBox txt_id_cat;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_name_cat;
         private System.Windows.Forms.Label label3;
     }
 }
