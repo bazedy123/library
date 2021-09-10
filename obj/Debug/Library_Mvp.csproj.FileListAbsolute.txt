@@ -1,1 +1,9 @@
 c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\bin\Debug\Library_Mvp.exe.config
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.Properties.Resources.resources
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.veiws.frm_books.resources
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.csproj.GenerateResource.Cache
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\bin\Debug\Library_Mvp.exe
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\bin\Debug\Library_Mvp.pdb
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.exe
+c:\users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.pdb
+C:\Users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.csprojResolveAssemblyReference.cache
