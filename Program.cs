@@ -16,7 +16,7 @@ namespace Library_Mvp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new veiws.frm_books());
+            Application.Run(new veiws.formes.Main1());
         }
     }
 }
