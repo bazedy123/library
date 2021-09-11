@@ -44,10 +44,10 @@
             this.txt_desc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_id_cat = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_name_cat = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txt_id_cat = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data1_cat)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -70,7 +70,7 @@
             this.btn_delete_cat.Appearance.Options.UseFont = true;
             this.btn_delete_cat.Appearance.Options.UseTextOptions = true;
             this.btn_delete_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_delete_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.ImageOptions.Image")));
+            this.btn_delete_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_cat.ImageOptions.Image")));
             this.btn_delete_cat.Location = new System.Drawing.Point(419, 38);
             this.btn_delete_cat.Name = "btn_delete_cat";
             this.btn_delete_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -86,13 +86,14 @@
             this.btn_add_cat.Appearance.Options.UseFont = true;
             this.btn_add_cat.Appearance.Options.UseTextOptions = true;
             this.btn_add_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_add_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.ImageOptions.Image")));
+            this.btn_add_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_cat.ImageOptions.Image")));
             this.btn_add_cat.Location = new System.Drawing.Point(235, 38);
             this.btn_add_cat.Name = "btn_add_cat";
             this.btn_add_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_add_cat.Size = new System.Drawing.Size(86, 33);
             this.btn_add_cat.TabIndex = 10;
             this.btn_add_cat.Text = "اضافة";
+            this.btn_add_cat.Click += new System.EventHandler(this.btn_add_cat_Click);
             // 
             // btn_removeall_cat
             // 
@@ -102,7 +103,7 @@
             this.btn_removeall_cat.Appearance.Options.UseFont = true;
             this.btn_removeall_cat.Appearance.Options.UseTextOptions = true;
             this.btn_removeall_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_removeall_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall.ImageOptions.Image")));
+            this.btn_removeall_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_cat.ImageOptions.Image")));
             this.btn_removeall_cat.Location = new System.Drawing.Point(511, 38);
             this.btn_removeall_cat.Name = "btn_removeall_cat";
             this.btn_removeall_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -118,7 +119,7 @@
             this.btn_new_cat.Appearance.Options.UseFont = true;
             this.btn_new_cat.Appearance.Options.UseTextOptions = true;
             this.btn_new_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_new_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new.ImageOptions.Image")));
+            this.btn_new_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new_cat.ImageOptions.Image")));
             this.btn_new_cat.Location = new System.Drawing.Point(143, 38);
             this.btn_new_cat.Name = "btn_new_cat";
             this.btn_new_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -148,7 +149,7 @@
             this.btn_save_cat.Appearance.Options.UseFont = true;
             this.btn_save_cat.Appearance.Options.UseTextOptions = true;
             this.btn_save_cat.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_save_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.ImageOptions.Image")));
+            this.btn_save_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save_cat.ImageOptions.Image")));
             this.btn_save_cat.Location = new System.Drawing.Point(327, 38);
             this.btn_save_cat.Name = "btn_save_cat";
             this.btn_save_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -160,7 +161,7 @@
             // 
             this.btn_first_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_first_cat.Appearance.Options.UseBackColor = true;
-            this.btn_first_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first.ImageOptions.Image")));
+            this.btn_first_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first_cat.ImageOptions.Image")));
             this.btn_first_cat.Location = new System.Drawing.Point(10, 40);
             this.btn_first_cat.Name = "btn_first_cat";
             this.btn_first_cat.Size = new System.Drawing.Size(40, 23);
@@ -170,7 +171,7 @@
             // 
             this.btn_next_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_next_cat.Appearance.Options.UseBackColor = true;
-            this.btn_next_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next.ImageOptions.Image")));
+            this.btn_next_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_cat.ImageOptions.Image")));
             this.btn_next_cat.Location = new System.Drawing.Point(102, 40);
             this.btn_next_cat.Name = "btn_next_cat";
             this.btn_next_cat.Size = new System.Drawing.Size(40, 23);
@@ -180,7 +181,7 @@
             // 
             this.btn_last_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_last_cat.Appearance.Options.UseBackColor = true;
-            this.btn_last_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last.ImageOptions.Image")));
+            this.btn_last_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last_cat.ImageOptions.Image")));
             this.btn_last_cat.Location = new System.Drawing.Point(148, 40);
             this.btn_last_cat.Name = "btn_last_cat";
             this.btn_last_cat.Size = new System.Drawing.Size(40, 23);
@@ -203,7 +204,7 @@
             // 
             this.btn_prev_cat.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_prev_cat.Appearance.Options.UseBackColor = true;
-            this.btn_prev_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev.ImageOptions.Image")));
+            this.btn_prev_cat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev_cat.ImageOptions.Image")));
             this.btn_prev_cat.Location = new System.Drawing.Point(56, 40);
             this.btn_prev_cat.Name = "btn_prev_cat";
             this.btn_prev_cat.Size = new System.Drawing.Size(40, 23);
@@ -243,6 +244,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات التصنيف";
             // 
+            // txt_name_cat
+            // 
+            this.txt_name_cat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_name_cat.Location = new System.Drawing.Point(282, 35);
+            this.txt_name_cat.Name = "txt_name_cat";
+            this.txt_name_cat.Size = new System.Drawing.Size(161, 30);
+            this.txt_name_cat.TabIndex = 5;
+            this.txt_name_cat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.Location = new System.Drawing.Point(461, 40);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 23);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "اسم التصنيف :";
+            // 
             // txt_id_cat
             // 
             this.txt_id_cat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -263,37 +283,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "رقم التصنيف :";
             // 
-            // txt_name_cat
-            // 
-            this.txt_name_cat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_name_cat.Location = new System.Drawing.Point(282, 35);
-            this.txt_name_cat.Name = "txt_name_cat";
-            this.txt_name_cat.Size = new System.Drawing.Size(161, 30);
-            this.txt_name_cat.TabIndex = 5;
-            this.txt_name_cat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(461, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "اسم التصنيف :";
-            // 
             // frm_type
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 496);
+            this.ClientSize = new System.Drawing.Size(864, 496);
             this.Controls.Add(this.dgv_data1_cat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Droid Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("التصنيفات.IconOptions.Image")));
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("frm_type.IconOptions.Image")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frm_type";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

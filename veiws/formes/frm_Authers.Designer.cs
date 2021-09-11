@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Authers));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_date_Autheer = new System.Windows.Forms.TextBox();
+            this.txt_con_Autheer = new System.Windows.Forms.TextBox();
             this.txt_name_Autheer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,9 +51,6 @@
             this.btn_removeall_Auther = new DevExpress.XtraEditors.SimpleButton();
             this.btn_new_Auther = new DevExpress.XtraEditors.SimpleButton();
             this.dgv_data1_Auther = new System.Windows.Forms.DataGridView();
-            this.txt_con_Autheer = new System.Windows.Forms.TextBox();
-            this.txt_date_Autheer = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -72,6 +73,34 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "دار النشر";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.Location = new System.Drawing.Point(219, 107);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(45, 23);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "الدوله :";
+            // 
+            // txt_date_Autheer
+            // 
+            this.txt_date_Autheer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_date_Autheer.Location = new System.Drawing.Point(39, 38);
+            this.txt_date_Autheer.Name = "txt_date_Autheer";
+            this.txt_date_Autheer.Size = new System.Drawing.Size(161, 30);
+            this.txt_date_Autheer.TabIndex = 8;
+            this.txt_date_Autheer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txt_con_Autheer
+            // 
+            this.txt_con_Autheer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_con_Autheer.Location = new System.Drawing.Point(39, 100);
+            this.txt_con_Autheer.Name = "txt_con_Autheer";
+            this.txt_con_Autheer.Size = new System.Drawing.Size(161, 30);
+            this.txt_con_Autheer.TabIndex = 7;
+            this.txt_con_Autheer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt_name_Autheer
             // 
@@ -138,7 +167,7 @@
             // 
             this.btn_first_Auther.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_first_Auther.Appearance.Options.UseBackColor = true;
-            this.btn_first_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first_pub.ImageOptions.Image")));
+            this.btn_first_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first_Auther.ImageOptions.Image")));
             this.btn_first_Auther.Location = new System.Drawing.Point(9, 29);
             this.btn_first_Auther.Name = "btn_first_Auther";
             this.btn_first_Auther.Size = new System.Drawing.Size(40, 23);
@@ -148,7 +177,7 @@
             // 
             this.btn_next_Auther.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_next_Auther.Appearance.Options.UseBackColor = true;
-            this.btn_next_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_pub.ImageOptions.Image")));
+            this.btn_next_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_Auther.ImageOptions.Image")));
             this.btn_next_Auther.Location = new System.Drawing.Point(101, 29);
             this.btn_next_Auther.Name = "btn_next_Auther";
             this.btn_next_Auther.Size = new System.Drawing.Size(40, 23);
@@ -158,7 +187,7 @@
             // 
             this.btn_last_Auther.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_last_Auther.Appearance.Options.UseBackColor = true;
-            this.btn_last_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last_pub.ImageOptions.Image")));
+            this.btn_last_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last_Auther.ImageOptions.Image")));
             this.btn_last_Auther.Location = new System.Drawing.Point(147, 29);
             this.btn_last_Auther.Name = "btn_last_Auther";
             this.btn_last_Auther.Size = new System.Drawing.Size(40, 23);
@@ -168,7 +197,7 @@
             // 
             this.btn_prev_Auther.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_prev_Auther.Appearance.Options.UseBackColor = true;
-            this.btn_prev_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev_pub.ImageOptions.Image")));
+            this.btn_prev_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev_Auther.ImageOptions.Image")));
             this.btn_prev_Auther.Location = new System.Drawing.Point(55, 29);
             this.btn_prev_Auther.Name = "btn_prev_Auther";
             this.btn_prev_Auther.Size = new System.Drawing.Size(40, 23);
@@ -196,7 +225,7 @@
             this.btn_save_Auther.Appearance.Options.UseFont = true;
             this.btn_save_Auther.Appearance.Options.UseTextOptions = true;
             this.btn_save_Auther.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_save_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save_pub.ImageOptions.Image")));
+            this.btn_save_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save_Auther.ImageOptions.Image")));
             this.btn_save_Auther.Location = new System.Drawing.Point(206, 29);
             this.btn_save_Auther.Name = "btn_save_Auther";
             this.btn_save_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -212,7 +241,7 @@
             this.btn_delete_Auther.Appearance.Options.UseFont = true;
             this.btn_delete_Auther.Appearance.Options.UseTextOptions = true;
             this.btn_delete_Auther.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_delete_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_pub.ImageOptions.Image")));
+            this.btn_delete_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_Auther.ImageOptions.Image")));
             this.btn_delete_Auther.Location = new System.Drawing.Point(298, 29);
             this.btn_delete_Auther.Name = "btn_delete_Auther";
             this.btn_delete_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -228,7 +257,7 @@
             this.btn_add_Auther.Appearance.Options.UseFont = true;
             this.btn_add_Auther.Appearance.Options.UseTextOptions = true;
             this.btn_add_Auther.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_add_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_pub.ImageOptions.Image")));
+            this.btn_add_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_Auther.ImageOptions.Image")));
             this.btn_add_Auther.Location = new System.Drawing.Point(114, 29);
             this.btn_add_Auther.Name = "btn_add_Auther";
             this.btn_add_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -244,7 +273,7 @@
             this.btn_removeall_Auther.Appearance.Options.UseFont = true;
             this.btn_removeall_Auther.Appearance.Options.UseTextOptions = true;
             this.btn_removeall_Auther.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_removeall_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_pub.ImageOptions.Image")));
+            this.btn_removeall_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_Auther.ImageOptions.Image")));
             this.btn_removeall_Auther.Location = new System.Drawing.Point(390, 29);
             this.btn_removeall_Auther.Name = "btn_removeall_Auther";
             this.btn_removeall_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -260,7 +289,7 @@
             this.btn_new_Auther.Appearance.Options.UseFont = true;
             this.btn_new_Auther.Appearance.Options.UseTextOptions = true;
             this.btn_new_Auther.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_new_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new_pub.ImageOptions.Image")));
+            this.btn_new_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new_Auther.ImageOptions.Image")));
             this.btn_new_Auther.Location = new System.Drawing.Point(22, 29);
             this.btn_new_Auther.Name = "btn_new_Auther";
             this.btn_new_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -271,42 +300,26 @@
             // dgv_data1_Auther
             // 
             this.dgv_data1_Auther.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Droid Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_data1_Auther.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_data1_Auther.Location = new System.Drawing.Point(35, 313);
             this.dgv_data1_Auther.Name = "dgv_data1_Auther";
             this.dgv_data1_Auther.Size = new System.Drawing.Size(781, 168);
             this.dgv_data1_Auther.TabIndex = 22;
             // 
-            // txt_con_Autheer
-            // 
-            this.txt_con_Autheer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_con_Autheer.Location = new System.Drawing.Point(39, 100);
-            this.txt_con_Autheer.Name = "txt_con_Autheer";
-            this.txt_con_Autheer.Size = new System.Drawing.Size(161, 30);
-            this.txt_con_Autheer.TabIndex = 7;
-            this.txt_con_Autheer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txt_date_Autheer
-            // 
-            this.txt_date_Autheer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_date_Autheer.Location = new System.Drawing.Point(39, 38);
-            this.txt_date_Autheer.Name = "txt_date_Autheer";
-            this.txt_date_Autheer.Size = new System.Drawing.Size(161, 30);
-            this.txt_date_Autheer.TabIndex = 8;
-            this.txt_date_Autheer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Navy;
-            this.label4.Location = new System.Drawing.Point(219, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 23);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "الدوله :";
-            // 
             // frm_Authers
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Appearance.ForeColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseFont = true;
+            this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 497);
@@ -321,7 +334,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_Authers";
+            this.Text = "المؤلفين";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
