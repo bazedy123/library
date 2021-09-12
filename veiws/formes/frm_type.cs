@@ -17,26 +17,26 @@ namespace Library_Mvp.veiws.formes
     {
         catogreyPresenter catPresenter;
 
-      public  int ID
+        public int ID
         {
             get
             {
-               return Convert.ToInt32(txt_id_cat.Text);
-               
+                return Convert.ToInt32(txt_id_cat.Text);
+
             }
 
             set
             {
                 txt_id_cat.Text = value.ToString();
-                
+
             }
         }
 
-      public  string Cname
+        public string Cname
         {
             get
             {
-               return txt_name_cat.Text;
+                return txt_name_cat.Text;
             }
 
             set
@@ -45,11 +45,11 @@ namespace Library_Mvp.veiws.formes
             }
         }
 
-      public  string Catogrey
+        public string Catogrey
         {
             get
             {
-               return txt_desc.Text;
+                return txt_desc.Text;
             }
 
             set
@@ -71,7 +71,7 @@ namespace Library_Mvp.veiws.formes
 
         private void btn_add_cat_Click(object sender, EventArgs e)
         {
-            bool check =catPresenter.catinsert();
+            bool check = catPresenter.catinsert();
             if (check)
             {
                 MessageBox.Show("تم الاضافة بنجاح");
@@ -80,6 +80,50 @@ namespace Library_Mvp.veiws.formes
             {
                 MessageBox.Show("هناك مشكلة");
             }
+        }
+
+        private void btn_save_cat_Click(object sender, EventArgs e)
+        {
+            bool check = catPresenter.catUpdate();
+            if (check)
+            {
+                MessageBox.Show("تم التعديل بنجاح");
+            }
+            else
+            {
+                MessageBox.Show("هناك مشكلة");
+            }
+        }
+
+        private void btn_delete_cat_Click(object sender, EventArgs e)
+        {
+            bool check = catPresenter.catDelete();
+            if (check)
+            {
+                MessageBox.Show("تم الحذف بنجاح");
+            }
+            else
+            {
+                MessageBox.Show("هناك مشكلة");
+            }
+        }
+
+        private void btn_removeall_cat_Click(object sender, EventArgs e)
+        {
+            bool check = catPresenter.catDeleteall();
+            if (check)
+            {
+                MessageBox.Show("تم حذف الكل");
+            }
+            else
+            {
+                MessageBox.Show("هناك مشكلة");
+            }
+        }
+
+        private void btn_new_cat_Click(object sender, EventArgs e)
+        {
+            catPresenter.Clear();
         }
     }
 }

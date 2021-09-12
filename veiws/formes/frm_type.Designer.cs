@@ -77,6 +77,7 @@
             this.btn_delete_cat.Size = new System.Drawing.Size(86, 33);
             this.btn_delete_cat.TabIndex = 14;
             this.btn_delete_cat.Text = "حذف";
+            this.btn_delete_cat.Click += new System.EventHandler(this.btn_delete_cat_Click);
             // 
             // btn_add_cat
             // 
@@ -110,6 +111,7 @@
             this.btn_removeall_cat.Size = new System.Drawing.Size(109, 33);
             this.btn_removeall_cat.TabIndex = 13;
             this.btn_removeall_cat.Text = "حذف الكل";
+            this.btn_removeall_cat.Click += new System.EventHandler(this.btn_removeall_cat_Click);
             // 
             // btn_new_cat
             // 
@@ -126,6 +128,7 @@
             this.btn_new_cat.Size = new System.Drawing.Size(86, 33);
             this.btn_new_cat.TabIndex = 11;
             this.btn_new_cat.Text = "جديد";
+            this.btn_new_cat.Click += new System.EventHandler(this.btn_new_cat_Click);
             // 
             // groupBox2
             // 
@@ -155,7 +158,8 @@
             this.btn_save_cat.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_save_cat.Size = new System.Drawing.Size(86, 33);
             this.btn_save_cat.TabIndex = 15;
-            this.btn_save_cat.Text = "حفظ";
+            this.btn_save_cat.Text = "تعديل";
+            this.btn_save_cat.Click += new System.EventHandler(this.btn_save_cat_Click);
             // 
             // btn_first_cat
             // 

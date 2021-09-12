@@ -58,4 +58,3 @@ C:\Users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Deb
 C:\Users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.veiws.formes.frm_dar_publish.resources
 C:\Users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.veiws.formes.frm_country.resources
 C:\Users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.veiws.formes.frm_Authers.resources
-C:\Users\s\documents\visual studio 2015\Projects\Library_Mvp\Library_Mvp\obj\Debug\Library_Mvp.csprojResolveAssemblyReference.cache

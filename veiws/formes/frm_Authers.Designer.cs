@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Authers));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_date_Autheer = new System.Windows.Forms.TextBox();
@@ -231,7 +230,8 @@
             this.btn_save_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_save_Auther.Size = new System.Drawing.Size(86, 33);
             this.btn_save_Auther.TabIndex = 15;
-            this.btn_save_Auther.Text = "حفظ";
+            this.btn_save_Auther.Text = "تعديل";
+            this.btn_save_Auther.Click += new System.EventHandler(this.btn_save_Auther_Click);
             // 
             // btn_delete_Auther
             // 
@@ -248,6 +248,7 @@
             this.btn_delete_Auther.Size = new System.Drawing.Size(86, 33);
             this.btn_delete_Auther.TabIndex = 14;
             this.btn_delete_Auther.Text = "حذف";
+            this.btn_delete_Auther.Click += new System.EventHandler(this.btn_delete_Auther_Click);
             // 
             // btn_add_Auther
             // 
@@ -264,6 +265,7 @@
             this.btn_add_Auther.Size = new System.Drawing.Size(86, 33);
             this.btn_add_Auther.TabIndex = 10;
             this.btn_add_Auther.Text = "اضافة";
+            this.btn_add_Auther.Click += new System.EventHandler(this.btn_add_Auther_Click);
             // 
             // btn_removeall_Auther
             // 
@@ -280,6 +282,7 @@
             this.btn_removeall_Auther.Size = new System.Drawing.Size(109, 33);
             this.btn_removeall_Auther.TabIndex = 13;
             this.btn_removeall_Auther.Text = "حذف الكل";
+            this.btn_removeall_Auther.Click += new System.EventHandler(this.btn_removeall_Auther_Click);
             // 
             // btn_new_Auther
             // 
@@ -296,18 +299,11 @@
             this.btn_new_Auther.Size = new System.Drawing.Size(86, 33);
             this.btn_new_Auther.TabIndex = 11;
             this.btn_new_Auther.Text = "جديد";
+            this.btn_new_Auther.Click += new System.EventHandler(this.btn_new_Auther_Click);
             // 
             // dgv_data1_Auther
             // 
             this.dgv_data1_Auther.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Droid Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_data1_Auther.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_data1_Auther.Location = new System.Drawing.Point(35, 313);
             this.dgv_data1_Auther.Name = "dgv_data1_Auther";
             this.dgv_data1_Auther.Size = new System.Drawing.Size(781, 168);

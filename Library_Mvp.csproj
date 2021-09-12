@@ -52,10 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controls\presinter\AutherPresenter.cs" />
     <Compile Include="controls\presinter\catogreyPresenter.cs" />
+    <Compile Include="controls\presinter\countryPresenter.cs" />
+    <Compile Include="controls\Services\AutherPrameters.cs" />
     <Compile Include="controls\Services\catgoreyPrameter.cs" />
+    <Compile Include="controls\Services\countryPrameters.cs" />
     <Compile Include="controls\Services\DBhelper.cs" />
+    <Compile Include="model\AutherModel.cs" />
     <Compile Include="model\catogrey.cs" />
+    <Compile Include="model\countryModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="veiws\formes\frm_Authers.cs">
@@ -94,7 +100,9 @@
     <Compile Include="veiws\formes\Main1.Designer.cs">
       <DependentUpon>Main1.cs</DependentUpon>
     </Compile>
+    <Compile Include="veiws\interfac\Iauther.cs" />
     <Compile Include="veiws\interfac\Icatogrey.cs" />
+    <Compile Include="veiws\interfac\Icountry.cs" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

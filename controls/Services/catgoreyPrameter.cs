@@ -52,13 +52,13 @@ namespace Library_Mvp.controls.Services
         //this method conct in class that contain method excute delete all
         public static bool getDeletall()
         {
-            return DBhelper.getconnction("catogreyDeleteall", () => getPrameterDeleteall( DBhelper.cmd));
+            return DBhelper.getconnction("catogreyDeleteall", () => getPrameterDeleteall());
          
         }
         //this method contain in parameters deleteall for storproseduer
-        private static void getPrameterDeleteall( SqlCommand cmd)
+        private static void getPrameterDeleteall()
         {
-           // cmd.Parameters.RemoveAt();
+           
         }
     }
 }

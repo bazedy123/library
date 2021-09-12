@@ -68,13 +68,14 @@
             this.btn_save_con.Appearance.Options.UseFont = true;
             this.btn_save_con.Appearance.Options.UseTextOptions = true;
             this.btn_save_con.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_save_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.ImageOptions.Image")));
+            this.btn_save_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save_con.ImageOptions.Image")));
             this.btn_save_con.Location = new System.Drawing.Point(247, 40);
             this.btn_save_con.Name = "btn_save_con";
             this.btn_save_con.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_save_con.Size = new System.Drawing.Size(86, 33);
             this.btn_save_con.TabIndex = 15;
-            this.btn_save_con.Text = "حفظ";
+            this.btn_save_con.Text = "تعديل";
+            this.btn_save_con.Click += new System.EventHandler(this.btn_save_con_Click);
             // 
             // btn_delete_con
             // 
@@ -84,13 +85,14 @@
             this.btn_delete_con.Appearance.Options.UseFont = true;
             this.btn_delete_con.Appearance.Options.UseTextOptions = true;
             this.btn_delete_con.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_delete_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.ImageOptions.Image")));
+            this.btn_delete_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_con.ImageOptions.Image")));
             this.btn_delete_con.Location = new System.Drawing.Point(339, 40);
             this.btn_delete_con.Name = "btn_delete_con";
             this.btn_delete_con.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_delete_con.Size = new System.Drawing.Size(86, 33);
             this.btn_delete_con.TabIndex = 14;
             this.btn_delete_con.Text = "حذف";
+            this.btn_delete_con.Click += new System.EventHandler(this.btn_delete_con_Click);
             // 
             // btn_add_con
             // 
@@ -100,13 +102,14 @@
             this.btn_add_con.Appearance.Options.UseFont = true;
             this.btn_add_con.Appearance.Options.UseTextOptions = true;
             this.btn_add_con.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_add_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add.ImageOptions.Image")));
+            this.btn_add_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_con.ImageOptions.Image")));
             this.btn_add_con.Location = new System.Drawing.Point(155, 40);
             this.btn_add_con.Name = "btn_add_con";
             this.btn_add_con.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_add_con.Size = new System.Drawing.Size(86, 33);
             this.btn_add_con.TabIndex = 10;
             this.btn_add_con.Text = "اضافة";
+            this.btn_add_con.Click += new System.EventHandler(this.btn_add_con_Click);
             // 
             // btn_removeall_con
             // 
@@ -116,13 +119,14 @@
             this.btn_removeall_con.Appearance.Options.UseFont = true;
             this.btn_removeall_con.Appearance.Options.UseTextOptions = true;
             this.btn_removeall_con.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_removeall_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall.ImageOptions.Image")));
+            this.btn_removeall_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_con.ImageOptions.Image")));
             this.btn_removeall_con.Location = new System.Drawing.Point(431, 40);
             this.btn_removeall_con.Name = "btn_removeall_con";
             this.btn_removeall_con.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_removeall_con.Size = new System.Drawing.Size(109, 33);
             this.btn_removeall_con.TabIndex = 13;
             this.btn_removeall_con.Text = "حذف الكل";
+            this.btn_removeall_con.Click += new System.EventHandler(this.btn_removeall_con_Click);
             // 
             // groupBox2
             // 
@@ -146,19 +150,20 @@
             this.btn_new_con.Appearance.Options.UseFont = true;
             this.btn_new_con.Appearance.Options.UseTextOptions = true;
             this.btn_new_con.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_new_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new.ImageOptions.Image")));
+            this.btn_new_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new_con.ImageOptions.Image")));
             this.btn_new_con.Location = new System.Drawing.Point(63, 40);
             this.btn_new_con.Name = "btn_new_con";
             this.btn_new_con.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_new_con.Size = new System.Drawing.Size(86, 33);
             this.btn_new_con.TabIndex = 11;
             this.btn_new_con.Text = "جديد";
+            this.btn_new_con.Click += new System.EventHandler(this.btn_new_con_Click);
             // 
             // btn_first_con
             // 
             this.btn_first_con.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_first_con.Appearance.Options.UseBackColor = true;
-            this.btn_first_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first.ImageOptions.Image")));
+            this.btn_first_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first_con.ImageOptions.Image")));
             this.btn_first_con.Location = new System.Drawing.Point(10, 40);
             this.btn_first_con.Name = "btn_first_con";
             this.btn_first_con.Size = new System.Drawing.Size(40, 23);
@@ -168,7 +173,7 @@
             // 
             this.btn_next_con.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_next_con.Appearance.Options.UseBackColor = true;
-            this.btn_next_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next.ImageOptions.Image")));
+            this.btn_next_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_con.ImageOptions.Image")));
             this.btn_next_con.Location = new System.Drawing.Point(102, 40);
             this.btn_next_con.Name = "btn_next_con";
             this.btn_next_con.Size = new System.Drawing.Size(40, 23);
@@ -178,7 +183,7 @@
             // 
             this.btn_last_con.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_last_con.Appearance.Options.UseBackColor = true;
-            this.btn_last_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last.ImageOptions.Image")));
+            this.btn_last_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last_con.ImageOptions.Image")));
             this.btn_last_con.Location = new System.Drawing.Point(148, 40);
             this.btn_last_con.Name = "btn_last_con";
             this.btn_last_con.Size = new System.Drawing.Size(40, 23);
@@ -188,7 +193,7 @@
             // 
             this.btn_prev_con.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_prev_con.Appearance.Options.UseBackColor = true;
-            this.btn_prev_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev.ImageOptions.Image")));
+            this.btn_prev_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev_con.ImageOptions.Image")));
             this.btn_prev_con.Location = new System.Drawing.Point(56, 40);
             this.btn_prev_con.Name = "btn_prev_con";
             this.btn_prev_con.Size = new System.Drawing.Size(40, 23);
@@ -241,9 +246,9 @@
             this.label1.ForeColor = System.Drawing.Color.Navy;
             this.label1.Location = new System.Drawing.Point(509, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 23);
+            this.label1.Size = new System.Drawing.Size(65, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "رقم الوله :";
+            this.label1.Text = "رقم الدوله :";
             // 
             // groupBox1
             // 
