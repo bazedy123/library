@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main1));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -59,7 +60,11 @@
             this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -88,7 +93,7 @@
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3});
-            this.ribbon.Size = new System.Drawing.Size(1056, 168);
+            this.ribbon.Size = new System.Drawing.Size(1044, 157);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // barButtonItem1
@@ -109,7 +114,9 @@
             this.barButtonItem2.ItemAppearance.Hovered.FontStyleDelta = System.Drawing.FontStyle.Bold;
             this.barButtonItem2.ItemAppearance.Hovered.Options.UseFont = true;
             this.barButtonItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.barButtonItem2.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.barButtonItem2.ItemAppearance.Normal.Options.UseFont = true;
+            this.barButtonItem2.ItemAppearance.Normal.Options.UseForeColor = true;
             this.barButtonItem2.ItemAppearance.Normal.Options.UseTextOptions = true;
             this.barButtonItem2.ItemAppearance.Normal.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.barButtonItem2.Name = "barButtonItem2";
@@ -388,10 +395,43 @@
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 476);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 477);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1056, 24);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1044, 23);
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.EnableBonusSkins = true;
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Visual Studio 2013 Dark";
+            // 
+            // imageSlider1
+            // 
+            this.imageSlider1.AllowDrop = true;
+            this.imageSlider1.AllowLooping = true;
+            this.imageSlider1.AnimationTime = 1500;
+            this.imageSlider1.AutoSlide = DevExpress.XtraEditors.Controls.AutoSlide.Forward;
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
+            this.imageSlider1.Location = new System.Drawing.Point(0, 157);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(1044, 320);
+            this.imageSlider1.TabIndex = 5;
+            this.imageSlider1.Text = "المكتبة الخاصة";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Droid Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(396, 424);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(210, 41);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "المكتبة الشخصيه";
             // 
             // Main1
             // 
@@ -399,7 +439,9 @@
             this.Appearance.Options.UseFont = true;
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1056, 500);
+            this.ClientSize = new System.Drawing.Size(1044, 500);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.imageSlider1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Bold);
@@ -414,6 +456,7 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "المكتبة";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,5 +494,8 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
+        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
+        private System.Windows.Forms.Label label1;
     }
 }

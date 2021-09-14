@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_country));
             this.dgv_data1_con = new System.Windows.Forms.DataGridView();
             this.btn_save_con = new DevExpress.XtraEditors.SimpleButton();
@@ -46,6 +48,7 @@
             this.txt_id_con = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data1_con)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -54,9 +57,19 @@
             // 
             // dgv_data1_con
             // 
+            this.dgv_data1_con.AllowUserToAddRows = false;
+            this.dgv_data1_con.AllowUserToDeleteRows = false;
+            this.dgv_data1_con.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_data1_con.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_data1_con.Location = new System.Drawing.Point(35, 329);
             this.dgv_data1_con.Name = "dgv_data1_con";
+            this.dgv_data1_con.ReadOnly = true;
+            this.dgv_data1_con.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Droid Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dgv_data1_con.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_data1_con.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Droid Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_data1_con.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_data1_con.Size = new System.Drawing.Size(603, 173);
             this.dgv_data1_con.TabIndex = 14;
             // 
@@ -115,8 +128,10 @@
             // 
             this.btn_removeall_con.Appearance.BackColor = System.Drawing.Color.LightGray;
             this.btn_removeall_con.Appearance.Font = new System.Drawing.Font("Droid Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_removeall_con.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_removeall_con.Appearance.Options.UseBackColor = true;
             this.btn_removeall_con.Appearance.Options.UseFont = true;
+            this.btn_removeall_con.Appearance.Options.UseForeColor = true;
             this.btn_removeall_con.Appearance.Options.UseTextOptions = true;
             this.btn_removeall_con.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btn_removeall_con.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_con.ImageOptions.Image")));
@@ -135,6 +150,7 @@
             this.groupBox2.Controls.Add(this.btn_add_con);
             this.groupBox2.Controls.Add(this.btn_removeall_con);
             this.groupBox2.Controls.Add(this.btn_new_con);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox2.Location = new System.Drawing.Point(35, 226);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(603, 97);
@@ -168,6 +184,8 @@
             this.btn_first_con.Name = "btn_first_con";
             this.btn_first_con.Size = new System.Drawing.Size(40, 23);
             this.btn_first_con.TabIndex = 8;
+            this.toolTip1.SetToolTip(this.btn_first_con, "الاول");
+            this.btn_first_con.Click += new System.EventHandler(this.btn_first_con_Click);
             // 
             // btn_next_con
             // 
@@ -178,6 +196,8 @@
             this.btn_next_con.Name = "btn_next_con";
             this.btn_next_con.Size = new System.Drawing.Size(40, 23);
             this.btn_next_con.TabIndex = 7;
+            this.toolTip1.SetToolTip(this.btn_next_con, "التالي");
+            this.btn_next_con.Click += new System.EventHandler(this.btn_next_con_Click);
             // 
             // btn_last_con
             // 
@@ -188,6 +208,8 @@
             this.btn_last_con.Name = "btn_last_con";
             this.btn_last_con.Size = new System.Drawing.Size(40, 23);
             this.btn_last_con.TabIndex = 5;
+            this.toolTip1.SetToolTip(this.btn_last_con, "الاخير");
+            this.btn_last_con.Click += new System.EventHandler(this.btn_last_con_Click);
             // 
             // btn_prev_con
             // 
@@ -198,6 +220,8 @@
             this.btn_prev_con.Name = "btn_prev_con";
             this.btn_prev_con.Size = new System.Drawing.Size(40, 23);
             this.btn_prev_con.TabIndex = 6;
+            this.toolTip1.SetToolTip(this.btn_prev_con, "السابق");
+            this.btn_prev_con.Click += new System.EventHandler(this.btn_prev_con_Click);
             // 
             // groupBox3
             // 
@@ -205,6 +229,7 @@
             this.groupBox3.Controls.Add(this.btn_next_con);
             this.groupBox3.Controls.Add(this.btn_last_con);
             this.groupBox3.Controls.Add(this.btn_prev_con);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox3.Location = new System.Drawing.Point(250, 137);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(199, 83);
@@ -224,7 +249,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(259, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 23);
@@ -236,6 +261,7 @@
             this.txt_id_con.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_id_con.Location = new System.Drawing.Point(386, 38);
             this.txt_id_con.Name = "txt_id_con";
+            this.txt_id_con.ReadOnly = true;
             this.txt_id_con.Size = new System.Drawing.Size(117, 30);
             this.txt_id_con.TabIndex = 1;
             this.txt_id_con.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -243,7 +269,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(509, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 23);
@@ -256,12 +282,17 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_id_con);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox1.Location = new System.Drawing.Point(35, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(603, 83);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات الدول";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.ShowAlways = true;
             // 
             // frm_country
             // 
@@ -281,6 +312,7 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "الدول";
+            this.Load += new System.EventHandler(this.frm_country_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_data1_con)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -309,5 +341,6 @@
         private System.Windows.Forms.TextBox txt_id_con;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

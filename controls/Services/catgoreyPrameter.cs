@@ -60,5 +60,21 @@ namespace Library_Mvp.controls.Services
         {
            
         }
+        public static DataTable getallData()
+        {
+          return  DBhelper.getData("catogreyGetall", ()=> { });
+        }
+
+        //this method contain in parameters get all rows max
+        public static DataTable getmax()
+        {
+            return DBhelper.getData("catogreyallmax", () => { });
+        }
+
+        //this method contain in parameters get all rows
+        public static DataTable getallrows()
+        {
+            return DBhelper.getData("catogreyallrow", () => { });
+        }
     }
 }

@@ -22,6 +22,8 @@ namespace Library_Mvp.controls.Services
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             cmd.Parameters.Add("@country", SqlDbType.NVarChar).Value = name;
         }
+
+
         //this method conct in class that contain method excute update
         public static bool getcountryUpdate(int id, string name)
         {
@@ -34,6 +36,8 @@ namespace Library_Mvp.controls.Services
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
             cmd.Parameters.Add("@country", SqlDbType.NVarChar).Value = name;
         }
+
+
         //this method conct in class that contain method excute delet
         public static bool getcountryDelete(int id)
         {
@@ -45,15 +49,34 @@ namespace Library_Mvp.controls.Services
         {
             cmd.Parameters.Add("@id", SqlDbType.Int).Value = id;
         }
+
+
         //this method conct in class that contain method excute deletall
         public static bool getcountryDeleteall()
         {
-            return DBhelper.getconnction("countryDeleteAll", () => getcountryPrametDeleteall());
+            return DBhelper.getconnction("countryDeleteAll", () => { });
 
         }
         //this method contain in parameters delete for storproseduer
-        private static void getcountryPrametDeleteall()
+        //private static void getcountryPrametDeleteall()
+        //{
+        //}
+        //this method contain in parameters select for storproseduer
+        public static DataTable getallData()
         {
+            return DBhelper.getData("countryGetall", () => { });
+        }
+
+        //this method contain in parameters get all rows
+        public static DataTable getallrows()
+        {
+            return DBhelper.getData("countryallrow", () => { });
+        }
+
+        //this method contain in parameters get all rows max
+        public static DataTable getmax()
+        {
+            return DBhelper.getData("countryallmax", () => { });
         }
     }
 }

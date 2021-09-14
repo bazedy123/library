@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Library_Mvp.model;
 using System.Data;
+using System.Data.Common;
 
 namespace Library_Mvp.controls.Services
 {
@@ -22,7 +23,7 @@ namespace Library_Mvp.controls.Services
 
             return new SqlConnection(Builder.ConnectionString);
         }
-        //this mothed insert update delete and delete all in database
+        //this mothed insert update delete and delete all from database
 
 
         public static bool getconnction(string spdatabase, Action method)
@@ -53,8 +54,40 @@ namespace Library_Mvp.controls.Services
             }
             return false;
         }
-
-
+        //this mothed select  from database
+        public static DataTable getData(string spdatabase, Action method)
+        {
+            DataTable tbl = new DataTable();
+            SqlDataAdapter da;
+            using (SqlConnection con = getSQLconnctionstring())
+            {
+                try
+                {
+                    cmd = new SqlCommand(spdatabase, con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    //this method that contain in prameters
+                    method.Invoke();
+                    con.Open();
+                    da = new SqlDataAdapter(cmd);
+                    da.Fill(tbl);
+                    da.Dispose();
+                    con.Close();
+                  
+                }
+                catch (Exception ex)
+                {
+                    con.Close();
+                    Console.WriteLine(ex.Message);
+                    
+                }
+                finally
+                {
+                    con.Close();
+                   
+                }
+            }
+            return tbl;
+        }
 
     }
 }

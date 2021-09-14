@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_dar_publish));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_id_pub = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbx_pub = new System.Windows.Forms.ComboBox();
             this.txt_name_pub = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -47,7 +49,6 @@
             this.btn_removeall_pub = new DevExpress.XtraEditors.SimpleButton();
             this.btn_new_pub = new DevExpress.XtraEditors.SimpleButton();
             this.dgv_data1_cat = new System.Windows.Forms.DataGridView();
-            this.cbx_pub = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -57,7 +58,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Location = new System.Drawing.Point(449, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 23);
@@ -76,7 +77,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(674, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 23);
@@ -91,12 +92,21 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_id_pub);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(26, 29);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Location = new System.Drawing.Point(12, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(781, 94);
+            this.groupBox1.Size = new System.Drawing.Size(795, 94);
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "دار النشر";
+            // 
+            // cbx_pub
+            // 
+            this.cbx_pub.FormattingEnabled = true;
+            this.cbx_pub.Location = new System.Drawing.Point(49, 34);
+            this.cbx_pub.Name = "cbx_pub";
+            this.cbx_pub.Size = new System.Drawing.Size(151, 31);
+            this.cbx_pub.TabIndex = 6;
             // 
             // txt_name_pub
             // 
@@ -110,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(206, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 23);
@@ -123,6 +133,7 @@
             this.groupBox3.Controls.Add(this.btn_next_pub);
             this.groupBox3.Controls.Add(this.btn_last_pub);
             this.groupBox3.Controls.Add(this.btn_prev_pub);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox3.Location = new System.Drawing.Point(322, 147);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(203, 83);
@@ -134,7 +145,7 @@
             // 
             this.btn_first_pub.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_first_pub.Appearance.Options.UseBackColor = true;
-            this.btn_first_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first_cat.ImageOptions.Image")));
+            this.btn_first_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_first_pub.ImageOptions.Image")));
             this.btn_first_pub.Location = new System.Drawing.Point(10, 40);
             this.btn_first_pub.Name = "btn_first_pub";
             this.btn_first_pub.Size = new System.Drawing.Size(40, 23);
@@ -144,7 +155,7 @@
             // 
             this.btn_next_pub.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_next_pub.Appearance.Options.UseBackColor = true;
-            this.btn_next_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_cat.ImageOptions.Image")));
+            this.btn_next_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_next_pub.ImageOptions.Image")));
             this.btn_next_pub.Location = new System.Drawing.Point(102, 40);
             this.btn_next_pub.Name = "btn_next_pub";
             this.btn_next_pub.Size = new System.Drawing.Size(40, 23);
@@ -154,7 +165,7 @@
             // 
             this.btn_last_pub.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_last_pub.Appearance.Options.UseBackColor = true;
-            this.btn_last_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last_cat.ImageOptions.Image")));
+            this.btn_last_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_last_pub.ImageOptions.Image")));
             this.btn_last_pub.Location = new System.Drawing.Point(148, 40);
             this.btn_last_pub.Name = "btn_last_pub";
             this.btn_last_pub.Size = new System.Drawing.Size(40, 23);
@@ -164,7 +175,7 @@
             // 
             this.btn_prev_pub.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btn_prev_pub.Appearance.Options.UseBackColor = true;
-            this.btn_prev_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev_cat.ImageOptions.Image")));
+            this.btn_prev_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_prev_pub.ImageOptions.Image")));
             this.btn_prev_pub.Location = new System.Drawing.Point(56, 40);
             this.btn_prev_pub.Name = "btn_prev_pub";
             this.btn_prev_pub.Size = new System.Drawing.Size(40, 23);
@@ -178,7 +189,7 @@
             this.btn_save_pub.Appearance.Options.UseFont = true;
             this.btn_save_pub.Appearance.Options.UseTextOptions = true;
             this.btn_save_pub.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_save_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save_cat.ImageOptions.Image")));
+            this.btn_save_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save_pub.ImageOptions.Image")));
             this.btn_save_pub.Location = new System.Drawing.Point(356, 29);
             this.btn_save_pub.Name = "btn_save_pub";
             this.btn_save_pub.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -193,9 +204,10 @@
             this.groupBox2.Controls.Add(this.btn_add_pub);
             this.groupBox2.Controls.Add(this.btn_removeall_pub);
             this.groupBox2.Controls.Add(this.btn_new_pub);
-            this.groupBox2.Location = new System.Drawing.Point(26, 225);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox2.Location = new System.Drawing.Point(12, 225);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(781, 86);
+            this.groupBox2.Size = new System.Drawing.Size(795, 86);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "العمليات المتاحة";
@@ -208,7 +220,7 @@
             this.btn_delete_pub.Appearance.Options.UseFont = true;
             this.btn_delete_pub.Appearance.Options.UseTextOptions = true;
             this.btn_delete_pub.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_delete_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_cat.ImageOptions.Image")));
+            this.btn_delete_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_pub.ImageOptions.Image")));
             this.btn_delete_pub.Location = new System.Drawing.Point(448, 29);
             this.btn_delete_pub.Name = "btn_delete_pub";
             this.btn_delete_pub.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -224,7 +236,7 @@
             this.btn_add_pub.Appearance.Options.UseFont = true;
             this.btn_add_pub.Appearance.Options.UseTextOptions = true;
             this.btn_add_pub.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_add_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_cat.ImageOptions.Image")));
+            this.btn_add_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_pub.ImageOptions.Image")));
             this.btn_add_pub.Location = new System.Drawing.Point(264, 29);
             this.btn_add_pub.Name = "btn_add_pub";
             this.btn_add_pub.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -240,7 +252,7 @@
             this.btn_removeall_pub.Appearance.Options.UseFont = true;
             this.btn_removeall_pub.Appearance.Options.UseTextOptions = true;
             this.btn_removeall_pub.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_removeall_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_cat.ImageOptions.Image")));
+            this.btn_removeall_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_pub.ImageOptions.Image")));
             this.btn_removeall_pub.Location = new System.Drawing.Point(540, 29);
             this.btn_removeall_pub.Name = "btn_removeall_pub";
             this.btn_removeall_pub.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -256,7 +268,7 @@
             this.btn_new_pub.Appearance.Options.UseFont = true;
             this.btn_new_pub.Appearance.Options.UseTextOptions = true;
             this.btn_new_pub.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
-            this.btn_new_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new_cat.ImageOptions.Image")));
+            this.btn_new_pub.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_new_pub.ImageOptions.Image")));
             this.btn_new_pub.Location = new System.Drawing.Point(172, 29);
             this.btn_new_pub.Name = "btn_new_pub";
             this.btn_new_pub.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -267,25 +279,25 @@
             // dgv_data1_cat
             // 
             this.dgv_data1_cat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_data1_cat.Location = new System.Drawing.Point(26, 326);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Droid Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_data1_cat.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgv_data1_cat.Location = new System.Drawing.Point(12, 326);
             this.dgv_data1_cat.Name = "dgv_data1_cat";
-            this.dgv_data1_cat.Size = new System.Drawing.Size(781, 168);
+            this.dgv_data1_cat.Size = new System.Drawing.Size(795, 168);
             this.dgv_data1_cat.TabIndex = 18;
-            // 
-            // cbx_pub
-            // 
-            this.cbx_pub.FormattingEnabled = true;
-            this.cbx_pub.Location = new System.Drawing.Point(49, 34);
-            this.cbx_pub.Name = "cbx_pub";
-            this.cbx_pub.Size = new System.Drawing.Size(151, 31);
-            this.cbx_pub.TabIndex = 6;
             // 
             // frm_dar_publish
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 506);
+            this.ClientSize = new System.Drawing.Size(810, 506);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

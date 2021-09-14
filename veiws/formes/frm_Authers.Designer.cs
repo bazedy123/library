@@ -66,6 +66,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_id_Auther);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox1.Location = new System.Drawing.Point(35, 16);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(781, 165);
@@ -76,7 +77,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Navy;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label4.Location = new System.Drawing.Point(219, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(45, 23);
@@ -113,7 +114,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Navy;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label3.Location = new System.Drawing.Point(674, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 23);
@@ -123,7 +124,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Navy;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label2.Location = new System.Drawing.Point(206, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 23);
@@ -142,7 +143,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Navy;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(674, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(78, 23);
@@ -155,6 +156,7 @@
             this.groupBox3.Controls.Add(this.btn_next_Auther);
             this.groupBox3.Controls.Add(this.btn_last_Auther);
             this.groupBox3.Controls.Add(this.btn_prev_Auther);
+            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox3.Location = new System.Drawing.Point(62, 212);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(203, 83);
@@ -209,6 +211,7 @@
             this.groupBox2.Controls.Add(this.btn_add_Auther);
             this.groupBox2.Controls.Add(this.btn_removeall_Auther);
             this.groupBox2.Controls.Add(this.btn_new_Auther);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.groupBox2.Location = new System.Drawing.Point(278, 212);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(538, 86);
@@ -276,6 +279,7 @@
             this.btn_removeall_Auther.Appearance.Options.UseTextOptions = true;
             this.btn_removeall_Auther.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap;
             this.btn_removeall_Auther.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_removeall_Auther.ImageOptions.Image")));
+            this.btn_removeall_Auther.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btn_removeall_Auther.Location = new System.Drawing.Point(390, 29);
             this.btn_removeall_Auther.Name = "btn_removeall_Auther";
             this.btn_removeall_Auther.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -311,14 +315,14 @@
             // 
             // frm_Authers
             // 
-            this.Appearance.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Appearance.ForeColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
             this.Appearance.Options.UseFont = true;
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 497);
+            this.ClientSize = new System.Drawing.Size(837, 481);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

@@ -54,7 +54,6 @@ namespace Library_Mvp.controls.presinter
         //method clearall for autherpresenter
         public void Clearfialds()
         {
-            connectbetweenModelinterfas();
             iauther.ID =0;
             iauther.auther_name ="";
             iauther.barith_date = "";
